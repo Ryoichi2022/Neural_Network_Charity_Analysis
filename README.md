@@ -59,7 +59,7 @@ The first model achieved 72.52% of accuracy. However, in spite of multiple times
 - **Analysis of numerical feature**\
   **ASK_AMT** is the only numerical value in the dataset, and there are some outliers as shown below. Although values are scaled through preprocessing, it may be appropriate to determine whether those outliers result in the model performance not achieving 75% of accuracy.
   
-  <img src="https://github.com/Ryoichi2022/Neural_Network_Charity_Analysis/blob/main/Funding_Amount.png" width="400"/>  
+  <img src="https://github.com/Ryoichi2022/Neural_Network_Charity_Analysis/blob/main/Funding_Amount.png" width="320"/>  
 
 - **Improvement of features**\
   Performance of a neural network will be dependent on the quality of features. By reviewing how significantly each feature i.e., **APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,** and **ASK_AMT** influences the target variable and preprocessing the dataset accordingly, the model could improve its performance.
