@@ -4,21 +4,21 @@ Challenge 19
 ## Overview of the analysis
 
 ### i. Project purpose
-A nonprofit foundation, Alphabet Soup, has raised and donated over 10 billion dollars in the past 20 years to invest in lifesaving technologies and organize reforestation groups. The foundation needs analysis to ensure that its money is being used effectively. To meet this need, a deep learning neural network will be designed and trained through the project.
+A nonprofit foundation, Alphabet Soup, has raised and donated over 10 billion dollars in the past 20 years to invest in lifesaving technologies and organize reforestation groups. The foundation needs an analysis to ensure that its money is being used effectively. To meet this need, a deep learning neural network will be designed and trained through the project.
 
 ### ii. Dataset received for analysis
-The dataset contains more than 34,000 organizations that have received funding from Alphabet Soup and captures the following data about organizations:\
-- **EIN and NAME** - Identification columns\
-- **APPLICATION_TYPE** - Alphabet Soup application type\
-- **AFFILIATION** - Affiliated sector of industry\
-- **CLASSIFICATION** - Government organization classification\
-- **USE_CASE** - Use case for funding\
-- **ORGANIZATION** - Organization type\
-- **STATUS** - Active status\
-- **INCOME_AMT** - Income classification\
-- **SPECIAL_CONSIDERATIONS** - Special consideration for application\
-- **ASK_AMT** - Funding amount requested\
-- **IS_SUCCESSFUL** - Was the money used effectively\
+The dataset contains more than 34,000 organizations that have received funding from Alphabet Soup and captures the following data about organizations:
+- **EIN and NAME** - Identification columns
+- **APPLICATION_TYPE** - Alphabet Soup application type
+- **AFFILIATION** - Affiliated sector of industry
+- **CLASSIFICATION** - Government organization classification
+- **USE_CASE** - Use case for funding
+- **ORGANIZATION** - Organization type
+- **STATUS** - Active status
+- **INCOME_AMT** - Income classification
+- **SPECIAL_CONSIDERATIONS** - Special consideration for application
+- **ASK_AMT** - Funding amount requested
+- **IS_SUCCESSFUL** - Was the money used effectively
 
 ### iii. Project goal
 The goal of the project is to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
