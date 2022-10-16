@@ -8,8 +8,8 @@ A nonprofit foundation, Alphabet Soup, has raised and donated over 10 billion do
 
 ### ii. Dataset received for analysis
 The dataset contains more than 34,000 organizations that have received funding from Alphabet Soup and captures the following data about organizations:\
--**EIN and NAME** - Identification columns\
--**APPLICATION_TYPE** - Alphabet Soup application type
+- **EIN and NAME** - Identification columns\
+- **APPLICATION_TYPE** - Alphabet Soup application type
 AFFILIATION - Affiliated sector of industry
 CLASSIFICATION - Government organization classification
 USE_CASE - Use case for funding
