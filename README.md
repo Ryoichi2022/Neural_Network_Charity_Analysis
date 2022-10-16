@@ -56,13 +56,13 @@ The following variables are considered the features: **APPLICATION_TYPE, AFFILIA
 The first model achieved 72.52% of accuracy. However, in spite of multiple times of trial with different preprocessing and layer definitions, 75% of accuracy has never been achieved. 
 
 ### ii. Recommendations
-- **Analysis of numerical feature\
-  ASK_AMT is the only numerical value in the dataset, and there are some outliers as shown below. Although values are scaled through preprocessing, it may be appropriate to determine whether those outliers result in the model performance without achieving 75% of accuracy.
+- **Analysis of numerical feature**\
+  **ASK_AMT** is the only numerical value in the dataset, and there are some outliers as shown below. Although values are scaled through preprocessing, it may be appropriate to determine whether those outliers result in the model performance not achieving 75% of accuracy.
   
   <img src="https://github.com/Ryoichi2022/Neural_Network_Charity_Analysis/blob/main/Funding_Amount.png" width="600"/>  
 
-- **Improvement of features\
-  Performance of a neural network will be dependent on the quality of features. By reviewing how significantly each feature i.e., APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, and ASK_AMT influence the target variable and preprocessing the dataset accordingly, the model could improve its performance.
+- **Improvement of features**\
+  Performance of a neural network will be dependent on the quality of features. By reviewing how significantly each feature i.e., **APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,** and **ASK_AMT** influences the target variable and preprocessing the dataset accordingly, the model could improve its performance.
   
-- **Possibility of overfitting\
-  80 neurons are used in the first layer, 40 in the second layer, and 20 in the third layer. It is necessary to ensure that the number of neurons is reasonable and does not cause overfitting issue in the model.
+- **Possibility of overfitting**\
+  80 neurons are used in the first layer, 40 in the second, and 20 in the third. It is necessary to ensure that the number of neurons is reasonable and does not cause overfitting issue in the model.
