@@ -2,9 +2,23 @@ Challenge 19
 # Neural_Network_Charity_Analysis
 
 ## Overview of the analysis
-The purpose of the project was to analyze Amazon reviews that were written by members of the paid Amazon Vine program. By means of the program, manufacturers and publishers will receive reviews regarding their products in exchange for paying a fee to Amazon and providing products to Amazon Vine members, who are required to write a review.
 
-In the project, after a dataset is extracted that contains reviews of a certain product, it is transformed to determine whether there is any bias in the dataset toward favorable reviews from Vine members.
+### i. Project purpose
+A nonprofit foundation, Alphabet Soup, has raised and donated over 10 billion dollars in the past 20 years to invest in lifesaving technologies and organize reforestation groups. The foundation needs analysis to ensure that its money is being used effectively. To meet this need, a deep learning neural network will be designed and trained through the project.
+
+### ii. Dataset received for analysis
+The dataset contains more than 34,000 organizations that have received funding from Alphabet Soup and captures the following data about organizations:
+**EIN and NAME** - Identification columns
+**APPLICATION_TYPE** - Alphabet Soup application type
+AFFILIATION - Affiliated sector of industry
+CLASSIFICATION - Government organization classification
+USE_CASE - Use case for funding
+ORGANIZATION - Organization type
+STATUS - Active status
+INCOME_AMT - Income classification
+SPECIAL_CONSIDERATIONS - Special consideration for application
+ASK_AMT - Funding amount requested
+IS_SUCCESSFUL - Was the money used effectively
 
 
 ## Results
