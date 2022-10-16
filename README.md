@@ -27,9 +27,9 @@ The goal of the project is to create a binary classifier that can predict whethe
 ## Results
 
 ### i. Data preprocessing
-- **Target variable**
+- **Target variable**\
 **IS_SUCCESSFUL** is considered the target of the model.
-- **Features variables**
+- **Features variables**\
 The following variables are considered the features: **APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, ASK_AMT**.
 
 
