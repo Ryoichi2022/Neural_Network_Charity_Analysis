@@ -32,7 +32,7 @@ The goal of the project is to create a binary classifier that can predict whethe
 - **Features variables**\
 The following variables are considered the features: **APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, ASK_AMT**.
 - **Removed variables**\
-**EIN** and **NAME** are removed as they are identification. In addition, after further review of the dataset, it has been noted that almost all organizations are active in **STATUS** with No **SPECIAL_CONSIDERATIONS**. These features are eliminated for simplification. Finally, the number of categories in **APPLICATION_TYPE, CLASSIFICATION, INCOME_AMT** are reduced.
+**EIN** and **NAME** are removed as they are identification. In addition, after further review of the dataset, it has been noted that almost all organizations are active in **STATUS** with No **SPECIAL_CONSIDERATIONS**. These features are eliminated for simplification. Finally, the number of categories in **APPLICATION_TYPE, CLASSIFICATION,** and **INCOME_AMT** are reduced.
 
 ### ii. Compiling, training, and evaluating the model
 - **Neural network specifications**\
@@ -46,7 +46,7 @@ The following variables are considered the features: **APPLICATION_TYPE, AFFILIA
 - **Steps for model performance improvement**\
   The steps include the following:
     - Eliminating of **STATUS** and **SPECIAL_CONSIDERATIONS** columns
-    - **Binning** of **INCOME_AMT** column
+    - Binning of **INCOME_AMT** column
     - Increasing the number of neurons from 30 to 40 in the second layer
     - Adding the third layer with 20 neurons and “tanh” activation function which is never used in other layers
 
