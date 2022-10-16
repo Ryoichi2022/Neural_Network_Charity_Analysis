@@ -51,35 +51,18 @@ The following variables are considered the features: **APPLICATION_TYPE, AFFILIA
     - Adding the third layer with 20 neurons and “tanh” activation function which is never used in other layers
 
 
-The analysis was conducted over the dataset of book reviews (amazon_reviews_us_Books_v1_02.tsv.gz), which included 3,105,520 reviews in total. Among all reviews, only two were written through the Amazon Vine program.
-
-Out of the original dataset, the following columns were selected to create a new dataset (Table 1) for further analysis: review_id, star_rating, helpful_votes, total_votes, vine, and verified_purchase. Then, only reviews with 20 or more total votes were retrieved, and percentage of helpful votes to total votes was calculated for each of these reviews.
-
-(Table 1) New dataset with selected columns
-
-<img src="https://github.com/Ryoichi2022/Amazon_Vine_Analysis/blob/main/New_dataset.png" width="600"/>
-
-### Number of Vine and non-Vine reviews
-There were 501,609 reviews with 20 or more votes, and all of them were non-Vine reviews. Although two reviews were written by the Vine program members, they received less than 20 total votes and were excluded from the analyzed dataset.
-
-### 5-Star Vine reviews
-As described above, no Vine reviews were available in the analyzed dataset.
-
-### 5-Star non-Vine reviews
-403,807 out of 501,609 reviews gained 50% or more helpful votes and were considered helpful by customers. As shown in Table 2, 242,889 or approximately 60% of the helpful reviews rated products with five stars.
-
-(Table 2) Summary of non-Vine reviews
-
-<img src="https://github.com/Ryoichi2022/Amazon_Vine_Analysis/blob/main/Unpaid_review_summary.png" width="800"/>
-
 ## Summary
+### i. Overall results
+The first model achieved 72.52% of accuracy. However, in spite of multiple times of trial with different preprocessing and layer definitions, 75% of accuracy has never been achieved. 
 
-### Positivity bias in Vine reviews
-In conclusion, it would not appropriate to determine whether or not there is a positivity bias for reviews in the Vine program based on the dataset without Vine reviews. However, a further review of the dataset indicates a remarkable gap in the percentage of 5-Star reviews between helpful reviews and others (Table 3).
+### ii. Recommendations
+  ### Analysis of numerical feature
+  ASK_AMT is the only numerical value in the dataset, and there are some outliers as shown below. Although values are scaled through preprocessing, it may be appropriate to determine whether those outliers result in the model performance without achieving 75% of accuracy.
+  
+  <img src="https://github.com/Ryoichi2022/Neural_Network_Charity_Analysis/blob/main/Funding_Amount.png" width="600"/>  
 
-(Table 3) Summary of 5-Star reviews
-
-<img src="https://github.com/Ryoichi2022/Amazon_Vine_Analysis/blob/main/Five_star_summary.png" width="800"/>
-
-### Potential of further analysis
-Other datasets could be extracted than book reviews to examine Vine reviews for positivity bias. In addition, by grouping datasets by number of stars and focusing on 5-Star reviews, it could be determined whether they are likely to receive a helpful vote from customers.
+  ### Improvement of features
+  Performance of a neural network will be dependent on the quality of features. By reviewing how significantly each feature i.e., APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, and ASK_AMT influence the target variable and preprocessing the dataset accordingly, the model could improve its performance.
+  
+  ### Possibility of overfitting
+  80 neurons are used in the first layer, 40 in the second layer, and 20 in the third layer. It is necessary to ensure that the number of neurons is reasonable and does not cause overfitting issue in the model.
