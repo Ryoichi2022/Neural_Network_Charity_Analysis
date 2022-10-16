@@ -7,8 +7,8 @@ Challenge 19
 A nonprofit foundation, Alphabet Soup, has raised and donated over 10 billion dollars in the past 20 years to invest in lifesaving technologies and organize reforestation groups. The foundation needs analysis to ensure that its money is being used effectively. To meet this need, a deep learning neural network will be designed and trained through the project.
 
 ### ii. Dataset received for analysis
-The dataset contains more than 34,000 organizations that have received funding from Alphabet Soup and captures the following data about organizations:
-**EIN and NAME** - Identification columns
+The dataset contains more than 34,000 organizations that have received funding from Alphabet Soup and captures the following data about organizations:\
+**EIN and NAME** - Identification columns\
 **APPLICATION_TYPE** - Alphabet Soup application type
 AFFILIATION - Affiliated sector of industry
 CLASSIFICATION - Government organization classification
