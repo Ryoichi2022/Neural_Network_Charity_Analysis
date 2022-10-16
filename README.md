@@ -31,6 +31,24 @@ The goal of the project is to create a binary classifier that can predict whethe
 **IS_SUCCESSFUL** is considered the target of the model.
 - **Features variables**\
 The following variables are considered the features: **APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, ASK_AMT**.
+- **Removed variables**\
+**EIN** and **NAME** are removed as they are identification. In addition, after further review of the dataset, it has been noted that almost all organizations are active in **STATUS** with No **SPECIAL_CONSIDERATIONS**. These features are eliminated for simplification. Finally, the number of categories in **APPLICATION_TYPE, CLASSIFICATION, INCOME_AMT** are reduced.
+
+### ii. Compiling, training, and evaluating the model
+- **Neural network specifications**\
+- Each layer is defined as follows:
+First layer – 80 neurons and “relu” activation function
+Second layer – 40 neurons and “relu” activation function
+Third layer – 20 neurons and “tanh” activation function, expecting a different type of activation to improve the model performance.
+Output layer – one neuron with “sigmoid” activation function
+- **Model performance**\
+- The model results in 72.47% of accuracy eventually.
+- **Steps for model performance improvement**\
+- The steps include the following:
+Eliminating of **STATUS** and **SPECIAL_CONSIDERATIONS** columns
+**Binning** of **INCOME_AMT** column
+Increasing the number of neurons from 30 to 40 in the second layer
+Adding the third layer with 20 neurons and “tanh” activation function which is never used in other layers
 
 
 The analysis was conducted over the dataset of book reviews (amazon_reviews_us_Books_v1_02.tsv.gz), which included 3,105,520 reviews in total. Among all reviews, only two were written through the Amazon Vine program.
