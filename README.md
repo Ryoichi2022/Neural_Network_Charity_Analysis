@@ -8,7 +8,7 @@ A nonprofit foundation, Alphabet Soup, has raised and donated over 10 billion do
 
 ### ii. Dataset received for analysis
 The dataset contains more than 34,000 organizations that have received funding from Alphabet Soup and captures the following data about organizations:
-- **EIN and NAME** - Identification columns
+- **EIN** and **NAME** - Identification columns
 - **APPLICATION_TYPE** - Alphabet Soup application type
 - **AFFILIATION** - Affiliated sector of industry
 - **CLASSIFICATION** - Government organization classification
@@ -18,7 +18,7 @@ The dataset contains more than 34,000 organizations that have received funding f
 - **INCOME_AMT** - Income classification
 - **SPECIAL_CONSIDERATIONS** - Special consideration for application
 - **ASK_AMT** - Funding amount requested
-- **IS_SUCCESSFUL** - Was the money used effectively
+- **IS_SUCCESSFUL** - Whether the money was used effectively
 
 ### iii. Project goal
 The goal of the project is to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
@@ -26,7 +26,13 @@ The goal of the project is to create a binary classifier that can predict whethe
 
 ## Results
 
-### Data transformation procedure
+### i. Data preprocessing
+- **Target variable**
+**IS_SUCCESSFUL** is considered the target of the model.
+- **Features variables**
+The following variables are considered the features: **APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, ASK_AMT**.
+
+
 The analysis was conducted over the dataset of book reviews (amazon_reviews_us_Books_v1_02.tsv.gz), which included 3,105,520 reviews in total. Among all reviews, only two were written through the Amazon Vine program.
 
 Out of the original dataset, the following columns were selected to create a new dataset (Table 1) for further analysis: review_id, star_rating, helpful_votes, total_votes, vine, and verified_purchase. Then, only reviews with 20 or more total votes were retrieved, and percentage of helpful votes to total votes was calculated for each of these reviews.
